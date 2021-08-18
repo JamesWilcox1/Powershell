@@ -1,0 +1,4 @@
+#Used to find the aliases to a parameter
+#Found on https://mikefrobbins.com/2012/08/30/finding-aliases-for-powershell-cmdlet-parameters/
+
+(Get-Command (Read-Host "Enter a PowerShell Cmdlet Name")).parameters.values | select name, aliases
