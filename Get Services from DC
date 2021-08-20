@@ -1,0 +1,3 @@
+#From 'Learn Powershell in a week of lunches' 
+Get-Service -computername (get-adcomputer -filter * -searchbase "ou=domain controllers,dc=Ravenhurst,dc=tech" | Select-Object -expand Name) 
+#Mostly a syntax reminder
